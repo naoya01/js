@@ -1,0 +1,54 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+a:hover {
+  opacity: 0.7;
+  transition: .3s;
+}
+
+@media print, screen and (max-width: 1440px) and (min-width: 771px) {
+  .u-pc {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .u-pc {
+    display: none;
+  }
+}
+
+@media print, screen and (min-width: 1441px) {
+  .u-tb {
+    display: none;
+  }
+}
+
+.btn{
+  background-color: #ccc;
+  height: 50px;
+  width: 50px;
+}
+
+
+.box {
+  background-color: #FFFFFF;
+  height: 200px;
+  width: 200px;
+  float: left;
+}
+
+.bg1 {
+  background-color: #FFAAAA;
+}
+
+.bg2 {
+  background-color: #FFBBBB;
+}
+
+.bg3 {
+  background-color: #FFCCCC;
+}
+
+.bg4 {
+  background-color: #FFDDDD;
+}
