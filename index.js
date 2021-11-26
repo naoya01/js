@@ -1,3 +1,8 @@
-$(function(){
-  $('body').html('<h1>Hello jQuery!!</h1>');
+$(function() {
+  $('#back a').on('click',function(event){
+    $('body, html').animate({
+      scrollTop:0
+    }, 800);
+    event.preventDefault();
+  });
 });
