@@ -1,11 +1,17 @@
-$(function() {
-  $('#tab-contents .tab[id != "tab1"]').hide();
+$(function () {
+  $(".menu-trigger").on("click", function (event) {
+    $(this).toggleClass("active");
+    $("#sp-menu").fadeToggle();
+    event.preventDefault();
+  });
 
-  $('#tab-menu a').on('click', function() {
-    $("#tab-contents .tab").hide();
-    $("#tab-menu .active").removeClass("active");
-    $(this).addClass("active");
-    $($(this).attr("href")).show();
-
+  $(window).scroll(function () {
+    if ($(this).scrollTop() < 300) {
+      // topBtn.fadeIn();
+      $(".menu-trigger").addClass("active");
+    } else {
+      $(".menu-trigger").removeClass("active");
+    }
+    return false;
   });
 });
